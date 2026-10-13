@@ -43,7 +43,11 @@ export function useGame() {
 
   // 1. Carrega vocabulário
   useEffect(() => {
-    fetch('/data/hanzi-db.json')
+    const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+      ? import.meta.env.BASE_URL
+      : `${import.meta.env.BASE_URL}/`;
+
+    fetch(`${baseUrl}data/hanzi-db.json`)
       .then((res) => res.json())
       .then((data: HanziEntry[]) => {
         setVocabulary(data);
