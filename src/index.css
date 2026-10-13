@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Modo Escuro (Default) — Tons minerais & pedra de tinta */
+  --bg-canvas: #121016;
+  --bg-surface: #1a1722;
+  --bg-surface-elevated: #24202d;
+  --bg-surface-hover: #2e293c;
+  --border-subtle: #2b2637;
+  --border-strong: #3d364e;
+
+  --text-primary: #f3efe6;         /* Branco papel de arroz quente */
+  --text-secondary: #9c96a6;       /* Cinza lavanda intermediário */
+  --text-muted: #666070;           /* Cinza atenuado */
+
+  /* Cores de Feedback (Tons Pastéis) */
+  --color-correct: #3d8c68;        /* Verde Jade Chinês Suave */
+  --color-correct-border: #4da37b;
+  --color-partial: #c99738;        /* Amarelo Imperial Ocre */
+  --color-partial-border: #dba642;
+  --color-wrong: #24202d;          /* Grafite Pedra de Tinta */
+  --color-wrong-border: #353042;
+
+  /* Acentos Culturais */
+  --accent-purple: #8b6cd9;        /* Púrpura Imperial */
+  --accent-purple-hover: #9c7ee6;
+  --accent-red: #c84c4c;           /* Vermelho Cinábrio Chinês */
+  --accent-yellow: #e2b048;        /* Amarelo Imperial Pastel */
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-cjk: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Fira Code", monospace;
+}
+
+html.light {
+  --bg-canvas: #f6f4ef;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ede9e0;
+  --bg-surface-hover: #e2ded5;
+  --border-subtle: #ddd8ce;
+  --border-strong: #bcb5a6;
+
+  --text-primary: #1e1b24;
+  --text-secondary: #5a5464;
+  --text-muted: #8c8596;
+
+  --color-correct: #367d5c;
+  --color-correct-border: #2c684c;
+  --color-partial: #b88628;
+  --color-partial-border: #9e721f;
+  --color-wrong: #e4dfd6;
+  --color-wrong-border: #cac4b8;
+
+  --accent-purple: #6f4ec2;
+  --accent-purple-hover: #5d3eb0;
+  --accent-red: #b83d3d;
+  --accent-yellow: #c89528;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
