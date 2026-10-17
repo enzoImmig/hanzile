@@ -7,6 +7,7 @@ import { HelpModal } from './components/HelpModal';
 import { GameOverModal } from './components/GameOverModal';
 import { StatsModal } from './components/StatsModal';
 import { HskFilterBar } from './components/HskFilterBar';
+import { Footer } from './components/Footer';
 
 export function App() {
   const {
@@ -118,6 +119,9 @@ export function App() {
         {/* Grade de 7 Colunas */}
         <GameGrid guesses={guesses} maxGuesses={6} />
       </main>
+
+      {/* Rodapé */}
+      <Footer />
 
       {/* Modais */}
       <HelpModal isOpen={isHelpOpen} onClose={() => setIsHelpOpen(false)} />
